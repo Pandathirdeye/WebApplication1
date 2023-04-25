@@ -1,0 +1,53 @@
+﻿@page
+@model WebApplication1.Pages.Quiz3Model
+@{
+    ViewData["Title"] = "Quiz 3";
+}
+
+<h2>Quiz 3: Advanced Topics</h2>
+
+@if (!Model.IsSubmitted)
+{
+    if (Model.Questions.Count > 0)
+    {
+        <form method="post">
+            <ol>
+                @foreach (var question in Model.Questions)
+                {
+                    <li>
+                        <strong>@question.Content</strong>
+                        <br />
+                        @foreach (var option in question.Options)
+                        {
+                            <input type="radio" id="@option" name="@question.Id" value="@option" />
+                            <label for="@option">@option</label>
+                            <br />
+                        }
+                    </li>
+                    <br />
+                }
+            </ol>
+            <button type="submit">Submit Answers</button>
+        </form>
+    }
+    else
+    {
+        <p>No questions available for this quiz. Please try again later or contact the administrator.</p>
+    }
+}
+else
+{
+    <h3>Your Score: @Model.Score/@Model.Questions.Count</h3>
+
+    <h4>Correct Answers:</h4>
+    <ol>
+        @foreach (var question in Model.Questions)
+        {
+            <li>
+                <strong>@question.Content</strong>
+                <br />
+                <em>Correct answer: @question.CorrectAnswer</em>
+            </li>
+        }
+    </ol>
+}

@@ -1,0 +1,187 @@
+/* Reset styles */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+
+/* Landing Page Styles */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.display-4 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    ul li {
+        margin-bottom: 1rem;
+    }
+
+        ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+.item {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+}
+
+.item-1 {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+    padding: 2rem 1rem;
+}
+
+.item-2 {
+    flex-basis: calc(50% - 0.5rem);
+    margin-bottom: 1rem;
+    padding: 2rem 1rem;
+}
+
+    .item-2 h2 {
+        margin-top: 0;
+    }
+
+.box-1 {
+    background-color: antiquewhite;
+    width: 100%;
+    margin: 7px;
+    padding: 50px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+    .display-4 {
+        font-size: 4rem;
+        margin-top: 8rem;
+        margin-bottom: 2rem;
+    }
+
+    .item-1 {
+        border: none;
+        background-color: transparent;
+        margin-right: 2rem;
+        flex-basis: 60%;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .item-2 {
+        border: none;
+        background-color: transparent;
+        flex-basis: 35%;
+        margin-bottom: 0;
+        padding: 0;
+    }

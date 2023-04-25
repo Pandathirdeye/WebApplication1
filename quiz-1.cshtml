@@ -1,0 +1,57 @@
+@page
+@model BasicConceptsModel
+
+@{
+    ViewData["Title"] = "BasicConceptsModel";
+}
+<h1>@ViewData["Title"]</h1>
+<form method="post">
+    <ol>
+        <li>
+            <p>@Model.Questions[0].Text</p>
+            <ul>
+                <li><input type="radio" name="q1" value="a">@Model.Questions[0].Answers[0]</li>
+                <li><input type="radio" name="q1" value="b">@Model.Questions[0].Answers[1]</li>
+                <li><input type="radio" name="q1" value="c">@Model.Questions[0].Answers[2]</li>
+            </ul>
+        </li>
+        <li>
+            <p>@Model.Questions[1].Text</p>
+            <ul>
+                <li><input type="radio" name="q2" value="a">@Model.Questions[1].Answers[0]</li>
+                <li><input type="radio" name="q2" value="b">@Model.Questions[1].Answers[1]</li>
+                <li><input type="radio" name="q2" value="c">@Model.Questions[1].Answers[2]</li>
+            </ul>
+        </li>
+        <li>
+            <p>@Model.Questions[2].Text</p>
+            <ul>
+                <li><input type="radio" name="q3" value="a">@Model.Questions[2].Answers[0]</li>
+                <li><input type="radio" name="q3" value="b">@Model.Questions[2].Answers[1]</li>
+                <li><input type="radio" name="q3" value="c">@Model.Questions[2].Answers[2]</li>
+            </ul>
+        </li>
+        <li>
+            <p>@Model.Questions[3].Text</p>
+            <ul>
+                <li><input type="radio" name="q4" value="a">@Model.Questions[3].Answers[0]</li>
+                <li><input type="radio" name="q4" value="b">@Model.Questions[3].Answers[1]</li>
+                <li><input type="radio" name="q4" value="c">@Model.Questions[3].Answers[2]</li>
+            </ul>
+        </li>
+        <li>
+            <p>@Model.Questions[4].Text</p>
+            <ul>
+                <li><input type="radio" name="q5" value="a">@Model.Questions[4].Answers[0]</li>
+                <li><input type="radio" name="q5" value="b">@Model.Questions[4].Answers[1]</li>
+                <li><input type="radio" name="q5" value="c">@Model.Questions[4].Answers[2]</li>
+            </ul>
+        </li>
+        <li>
+            <p>@Model.Questions[5].Text</p>
+            <ul>
+                <li><input type="radio" name="q6" value="a">@Model.Questions[5].Answers[0]</li>
+                <li><input type="radio" name="q6" value="b">@Model.Questions[5].Answers[1]</li>
+                </ul>
+                </ol>
+                </form>

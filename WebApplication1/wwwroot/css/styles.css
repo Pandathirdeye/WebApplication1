@@ -1,0 +1,85 @@
+﻿/* Global Styles */
+html {
+    font-size: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+/* Landing Page Styles */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    ul li {
+        margin-bottom: 1rem;
+    }
+
+        ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+
+.item {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item-1 {
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+    padding: 2rem 1rem;
+}
+
+.item-2 {
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    flex-basis: calc(50% - 0.5rem);
+    margin-bottom: 1rem;
+    padding: 2rem 1rem;
+}
+
+    .item-2 h2 {
+        margin-top: 0;
+    }
+
+.box-1 {
+    background-color: antiquewhite;
+    width: 100%;
+    margin:

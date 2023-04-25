@@ -1,0 +1,39 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+    <script src="~/js/site.js" defer></script>
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Berk-Tek Certification Program</h1>
+        <p>Take your career to the next level with our web-based certification program. Choose from a variety of quizzes designed to test your knowledge and skills in the CIS/IT sub area of Computer Based Assessment and Distance Learning. Get certified and show the world what you're capable of!</p>
+    </div>
+
+    <div class="container">
+        <div class="item item-1">
+            <h2>Available Certification Quizzes</h2>
+            <ul>
+                <li><a href="/quiz-1">Basic Quiz</a></li>
+                <li><a href="/quiz-2">Intermediate Quiz</a></li>
+                <li><a href="/quiz-3">Advanced Quiz</a></li>
+            </ul>
+        </div>
+
+        <div class="item item-2">
+            <h2>Why Choose Berk-Tek?</h2>
+            <p>Our certification program is designed by experts in the field, ensuring that you receive the highest quality training. With our web-based format, you can study from anywhere, at any time, and at your own pace. Plus, our program is backed by Berk-Tek's reputation for excellence and innovation in the computer-based wire industry. Get started today!</p>
+        </div>
+    </div>
+</body>
+</html>
